@@ -1,0 +1,69 @@
+<header id="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="info-box">
+            <i class="fa fa-envelope"></i>
+            <div class="info-text">
+              <h5>Email Address:</h5>
+              <a href="#">cofee@diagram.com</a>
+            </div>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-phone"></i>
+            <div class="info-text">
+              <h5>Contact Number:</h5>
+              <span>+121 2134345678</span>
+            </div>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-clock-o"></i>
+            <div class="info-text">
+              <h5>Opening Time:</h5>
+              <a href="#">Mon-Sat: 9:00 - 17:30</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="top-social pull-right">
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+  </div><!-- top-bar -->
+
+  <div class="main-menu">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li [ngClass]="{'active': current==='home'}" ><a href="/home">Home</a></li>
+            <li [ngClass]="{'active': current==='about'}"><a href="/about-us">About us</a></li>
+            <li [ngClass]="{'active': current==='services'}"><a href="/services">Services</a></li>
+            <li [ngClass]="{'active': current==='projects'}"><a href="/projects">Projects</a></li>
+            <li [ngClass]="{'active': current==='contact'}"><a href="/contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+      </div><!-- container -->
+    </nav><!-- navbar -->
+  </div><!-- main menu -->
+</header><!-- Header -->
