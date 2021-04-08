@@ -66,13 +66,8 @@
 </div><!-- home -->
 
 
-
 <div class="features-section section-padding">
   <div class="container">
-    <div class="section-title text-center">
-      <h1>Amazing Features</h1>
-      <h2>We have awesome Features</h2>
-    </div>
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="features">
@@ -81,8 +76,11 @@
           </div>
 
           <div class="feature-text">
-            <h4>Creative Ideas</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore. </p>
+            <h4>Consulting</h4>
+            <app-app-read-more
+              [content]="consulting"
+              [limit]="90"
+              [completeWords]="true"></app-app-read-more>
           </div>
         </div>
       </div>
@@ -93,8 +91,12 @@
           </div>
 
           <div class="feature-text">
-            <h4>Professional Workers</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore.</p>
+            <h4>Service Areas</h4>
+            <p></p>
+            <app-app-read-more
+              [content]="serviceAreas"
+              [limit]="100"
+              [completeWords]="true"></app-app-read-more>
           </div>
         </div>
       </div>
@@ -105,45 +107,9 @@
           </div>
 
           <div class="feature-text">
-            <h4>Time Frame</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="features">
-          <div class="feature-icon">
-            <i class="fa fa-hand-lizard-o" aria-hidden="true"></i>
-          </div>
-
-          <div class="feature-text">
-            <h4>Helping Hand</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="features">
-          <div class="feature-icon">
-            <i class="fa fa-universal-access" aria-hidden="true"></i>
-          </div>
-
-          <div class="feature-text">
-            <h4>Safty Instrument</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="features">
-          <div class="feature-icon">
-            <i class="fa fa-sitemap" aria-hidden="true"></i>
-          </div>
-
-          <div class="feature-text">
-            <h4>Cost Effective</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore. </p>
+            <h4>Professional Services</h4>
+            <app-app-read-more [content]="professionalServices" [limit]="100"
+                               [completeWords]="true"></app-app-read-more>
           </div>
         </div>
       </div>
@@ -168,7 +134,8 @@
             </div>
             <div class="process-info">
               <h4>Work Strategy</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut
+                labore et dolore magna aliqua ut enim ad.</p>
             </div>
           </div>
           <div class="work-proces left-content text-right">
@@ -177,7 +144,8 @@
             </div>
             <div class="process-info">
               <h4>Best Quality</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut
+                labore et dolore magna aliqua ut enim ad.</p>
             </div>
           </div>
         </div>
@@ -189,7 +157,8 @@
             </div>
             <div class="process-info">
               <h4>Specialist Engineers</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut
+                labore et dolore magna aliqua ut enim ad.</p>
             </div>
           </div>
           <div class="work-proces">
@@ -198,7 +167,8 @@
             </div>
             <div class="process-info">
               <h4>Skilled Workers</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod fore to tempor incididunt ut
+                labore et dolore magna aliqua ut enim ad.</p>
             </div>
           </div>
         </div>

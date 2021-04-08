@@ -12,6 +12,7 @@ import { ServiceComponent } from './components/service/service.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { AppReadMoreComponent } from './components/home/app-read-more/app-read-more.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     ServiceComponent,
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    AppReadMoreComponent
   ],
   imports: [
     BrowserModule,
