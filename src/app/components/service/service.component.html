@@ -17,6 +17,52 @@
       <h1>Our Services</h1>
       <h2>We Offer Our Clients</h2>
     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="service-content">
+          <h2>Services</h2>
+          <p>
+            Visha consultants has been performing numerous Geotechnical Engineering Consulting services throughout
+            the Bay Area and the Sacramento region from individual home owners to multi million dollar businesses.
+            Following are the key geotechnical engineering services we provide:
+          </p>
+
+          <ul class="custom-list">
+            <li>Geotechnical Investigation (Soils) Report</li>
+            <li>Conventional and Segmental Retaining Wall Design</li>
+            <li>Foundation Design with Bearing Capacity Values</li>
+            <li>Pavement Design (Concrete and Asphalt Pavements)</li>
+            <li>Geotechnical Feasibility Studies & Site Investigations</li>
+            <li>Slope Stability Analysis & Landslide Study</li>
+            <li>Earthquake Analyses with Liquefaction Study</li>
+            <li>Develop Site Specific Seismic Ground Motion Parameters</li>
+            <li>Installing Groundwater Monitoring Wells and Percolation Tests</li>
+            <li>Building Settlement Evaluation and Inspection</li>
+            <li>Provide Field Inspection and Testing Services during Earthwork Fill Placement & Compaction.</li>
+          </ul>
+          <br/>
+          <p>
+            We also perform field inspection and testing services during earthwork fill placement and compaction (grading), testing of street subgrade,
+            aggregate base, and asphalt concrete, observation and testing of soil fill placement and compaction.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-us-image">
+          <img class="img-responsive" src="images/service/index003001.jpg" alt="" >
+        </div>
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
+</div><!-- features section -->
+
+<div *ngIf="isShow" class="service-section section-padding">
+  <div class="container">
+    <div class="section-title text-center">
+      <h1>Our Services</h1>
+      <h2>We Offer Our Clients</h2>
+    </div>
     <div class="service-content">
       <div class="services">
         <div class="row">
@@ -98,7 +144,7 @@
   </div><!-- container -->
 </div><!-- service section -->
 
-<div class="work-process image-bg section-padding">
+<div *ngIf="isShow" class="work-process image-bg section-padding">
   <div class="overlay"></div>
   <div class="container">
     <div class="section-title text-center">
@@ -154,7 +200,7 @@
   </div><!-- container -->
 </div><!-- process -->
 
-<div class="recent-projects section-padding">
+<div *ngIf="isShow" class="recent-projects section-padding">
   <div class="container">
     <div class="section-title text-center">
       <div class="container">
@@ -240,7 +286,7 @@
 </div><!-- recent projects -->
 
 
-<div class="testimonial-section image-bg section-padding">
+<div *ngIf="isShow" class="testimonial-section image-bg section-padding">
   <div class="overlay"></div>
   <div class="container">
     <div class="testimonial-slider">

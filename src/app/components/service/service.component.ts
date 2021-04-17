@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
+  isShow = false;
+
   constructor() { }
 
   ngOnInit(): void {
