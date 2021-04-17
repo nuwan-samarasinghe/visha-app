@@ -13,6 +13,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppReadMoreComponent } from './components/home/app-read-more/app-read-more.component';
+import { CareersComponent } from './components/careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppReadMoreComponent } from './components/home/app-read-more/app-read-m
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    AppReadMoreComponent
+    AppReadMoreComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,
