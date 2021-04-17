@@ -15,17 +15,32 @@
   <div class="container">
     <div class="section-title text-center">
       <h1>What We Do</h1>
-      <h2>About Our Construction</h2>
+      <h2>About Construction</h2>
     </div>
     <div class="row">
       <div class="col-md-6">
         <div class="about-section-content">
           <h2>About Construction</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a enim aliquam, condimentum nisl a, laoreet lectus. Aliquam convallis sed elit nec vehicula. Praesent gravida, massa sit amet ullamcorper fringilla, tortor nunc ultrices dui, in tristique leo leo sed massa.</p>
+          <p>
+            Visha Consultants, Inc. is dedicated to provide geotechnical engineering and construction support services to,
+            from residential construction project to multi million commercial construction project. Our firm has
+            California registered geotechnical engineers, professional engineers and engineering geologists with
+            over twenty years of working experience in the field of geotechnical engineering and engineering geology.
+          </p>
 
-          <p>Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varius eget, pellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus.</p>
+          <p>
+            We specialize in finding cost effective way to build residential foundations to multi story commercial
+            building foundations and finding solution to resolve foundation distress problems.
+            We also specialize in designing retaining walls, below grade structures, and performing slope stability,
+            seismic, liquefaction, and fault analyses.
+          </p>
 
-          <p>Sed elementum dapibus tellus, a dictum metus interdum ac. Nullam condimentum, dui volutpat fringilla molestie, libero tortor ultrices lorem, at tempus diam purus non velit. Aliquam vel nulla eleifend, consequat elit id, tristique massa. Fusce dolor velit, blandit ac erat ac, vestibulum ornare diam.</p>
+          <p>
+            Our engineers and geologists closely and directly work with County and City reviewers,
+            project designers, and contractors to get our clients projects done quickly and while
+            maintaining a good service quality.
+          </p>
+
         </div>
       </div>
       <div class="col-md-6">
@@ -37,7 +52,7 @@
   </div><!-- container -->
 </div><!-- features section -->
 
-<div class="work-process image-bg section-padding">
+<div *ngIf="isShow" class="work-process image-bg section-padding">
   <div class="overlay"></div>
   <div class="container">
     <div class="section-title text-center">
@@ -93,7 +108,7 @@
   </div><!-- container -->
 </div><!-- process -->
 
-<div class="team-section section-padding">
+<div *ngIf="isShow" class="team-section section-padding">
   <div class="container">
     <div class="section-title text-center">
       <h1>OUR Team</h1>
@@ -187,7 +202,7 @@
   </div><!-- container -->
 </div><!-- team section -->
 
-<div class="testimonial-section image-bg section-padding">
+<div *ngIf="isShow" class="testimonial-section image-bg section-padding">
   <div class="overlay"></div>
   <div class="container">
     <div class="testimonial-slider">
