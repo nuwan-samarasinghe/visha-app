@@ -15,6 +15,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppReadMoreComponent } from './components/home/app-read-more/app-read-more.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ClientSectionComponent } from './shared/client-section/client-section.component';
+import {AgmCoreModule} from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,10 @@ import { ClientSectionComponent } from './shared/client-section/client-section.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAk9nDfZXUGoPvUtURDXNfeu7SIsVwMXOs'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
