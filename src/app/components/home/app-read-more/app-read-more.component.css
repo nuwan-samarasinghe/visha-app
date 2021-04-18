@@ -2,3 +2,12 @@
   flex: 0 0 50%;
   margin: 1rem 0;
 }
+
+.btn-custom-read-more {
+  background-color: transparent;
+  color: #efbb20;
+}
+
+.btn-custom-read-more:hover {
+  color: #2c3e50;
+}

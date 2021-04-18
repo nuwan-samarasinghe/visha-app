@@ -1,3 +1,3 @@
 {{ content }}
-<button class="btn btn-outline-warning" *ngIf="!isContentToggled" (click)="toggleContent()">Read More</button>
-<button class="btn btn-outline-warning" *ngIf="isContentToggled" (click)="toggleContent()">Read Less</button>
+<button class="btn btn-outline-warning no-padding btn-custom-read-more" *ngIf="!isContentToggled" (click)="toggleContent()">Read More</button>
+<button class="btn btn-outline-warning no-padding btn-custom-read-more" *ngIf="isContentToggled" (click)="toggleContent()">Read Less</button>

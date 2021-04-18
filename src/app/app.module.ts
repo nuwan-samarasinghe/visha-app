@@ -14,6 +14,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppReadMoreComponent } from './components/home/app-read-more/app-read-more.component';
 import { CareersComponent } from './components/careers/careers.component';
+import { ClientSectionComponent } from './shared/client-section/client-section.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CareersComponent } from './components/careers/careers.component';
     FooterComponent,
     NavbarComponent,
     AppReadMoreComponent,
-    CareersComponent
+    CareersComponent,
+    ClientSectionComponent
   ],
   imports: [
     BrowserModule,
