@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public success: boolean;
+  public error: boolean;
+
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.queryParams.subscribe(params => {
+      const success = params[`success`];
+      if (success === 'true') {
+        this.success = true;
+      } else if (success === 'false') {
+        this.error = true;
+      }
+    });
+  }
 
   ngOnInit(): void {
   }
