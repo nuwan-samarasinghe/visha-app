@@ -1,10 +1,10 @@
 <IfModule mod_rewrite.c>
   Options Indexes FollowSymLinks
   RewriteEngine On
-  RewriteBase /chama/
+  RewriteBase /new_web/
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . index.html [L]
-  RewriteRule ^(chama/.*)$ https://www.chamacomputers.lk.lk/$1 [R=301,L]
+  RewriteRule ^(new_web/.*)$ http://www.new.vishaconsultants.com//$1 [R=301,L]
 </IfModule>
