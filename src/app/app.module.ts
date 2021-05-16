@@ -45,7 +45,10 @@ import { ProjectsEmptyComponent } from './components/projects-empty/projects-emp
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAk9nDfZXUGoPvUtURDXNfeu7SIsVwMXOs'
-    })
+    }),
+    ReactiveFormsModule,
+    NgxCaptchaModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

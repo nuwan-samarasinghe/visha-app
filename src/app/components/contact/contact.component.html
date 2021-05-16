@@ -21,37 +21,58 @@
     <div class="alert alert-danger" *ngIf="error">Sorry, something went wrong. please retry..</div>
 
     <div class="contact-info">
-<!--      <form id="contact-form" class="contact-form" name="contact-form" method="post" action="https://formspree.io/f/xleadbwk">-->
-      <form id="contact-form" class="contact-form" name="contact-form" method="post" action="https://api.vishaconsultants.com/php_backend/contact.php">
+      <!--      <form id="contact-form" class="contact-form" name="contact-form" method="post" action="https://formspree.io/f/xleadbwk">-->
+      <form id="contact-form" class="contact-form" [formGroup]="aFormGroup" name="contact-form" method="post" (ngSubmit)="submit()"
+            action="http://localhost/php_backend/contact.php" #contactForm>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
               <i class="fa fa-user" aria-hidden="true"></i>
-              <input type="text" name="_name" class="form-control control-1" required="required" placeholder="Name">
+              <input type="text" name="_name" class="form-control control-1" required="required" placeholder="Name" formControlName="name">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
               <i class="fa fa-th-list" aria-hidden="true"></i>
-              <input type="text" name="_subject" class="form-control" required="required" placeholder="Subject">
+              <input type="text" name="_apn" class="form-control" required="required" placeholder="Property Address / APN Number" formControlName="apn">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <input type="tel" name="_contact" class="form-control" required="required" placeholder="Contact Number" formControlName="contact">
+            </div>
+          </div>
+          <div class="col-sm-6">
             <div class="form-group">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <input type="email" name="_replyto" class="form-control" required="required" placeholder="E-mail">
+              <input type="email" name="_email" class="form-control" required="required" placeholder="E-mail" formControlName="email">
             </div>
           </div>
 
           <div class="col-sm-12">
             <div class="form-group">
               <i class="fa fa-comments" aria-hidden="true"></i>
-              <textarea name="_message" id="_message" required="required" class="form-control" rows="7" placeholder="Message"></textarea>
+              <textarea name="_message" id="_message" required="required" class="form-control" rows="7" placeholder="Project Details" formControlName="message"></textarea>
             </div>
           </div>
         </div>
+        <ngx-recaptcha2 #captchaElem
+                        [siteKey]="siteKey"
+                        (reset)="handleReset()"
+                        (expire)="handleExpire()"
+                        (load)="handleLoad()"
+                        (success)="handleSuccess($event)"
+                        [useGlobalDomain]="false"
+                        [size]="size"
+                        [hl]="lang"
+                        [theme]="theme"
+                        [type]="type"
+                        formControlName="recaptcha">
+        </ngx-recaptcha2>
+        <br>
         <div class="submit-button">
-          <button type="submit" class="btn btn-primary">Send Now</button>
+          <button [disabled]="!this.captchaSuccess" type="submit" class="btn btn-primary">Send Now</button>
         </div>
       </form><!-- contact form -->
     </div>
