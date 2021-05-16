@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    #message td, #message th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #message th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #134383;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<h4>Hi ' . $name . '</h4>
+<p>
+  Thank you for contacting us. We received your project details and site location.
+  We will review the details and site geologic condition and get back to you at our earliest convenience.
+</p>
+<p>
+  Please find the below copy of your submission.
+</p>
+<table id="message">
+  <tr>
+    <th>Filed</th>
+    <th>Answer</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>' . $name . '</td>
+  </tr>
+  <tr>
+    <td>Property Address / APN Number</td>
+    <td>' . $apn . '</td>
+  </tr>
+  <tr>
+    <td>Contact Number</td>
+    <td>' . $contact . '</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>' . $email . '</td>
+  </tr>
+  <tr>
+    <td>Project Details</td>
+    <td>' . $message . '</td>
+  </tr>
+</table>
+
+<p>
+  Thank you,
+  <br>
+  Visha Consultants, Inc.
+</p>
+
+</body>
+</html>

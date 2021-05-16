@@ -16,6 +16,11 @@ import { AppReadMoreComponent } from './components/home/app-read-more/app-read-m
 import { CareersComponent } from './components/careers/careers.component';
 import { ClientSectionComponent } from './shared/client-section/client-section.component';
 import {AgmCoreModule} from '@agm/core';
+import {ReactiveFormsModule} from "@angular/forms";
+import {NgxCaptchaModule} from "ngx-captcha";
+import {HttpClientModule} from "@angular/common/http";
+import { CareersEmptyComponent } from './components/careers-empty/careers-empty.component';
+import { ProjectsEmptyComponent } from './components/projects-empty/projects-empty.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,9 @@ import {AgmCoreModule} from '@agm/core';
     NavbarComponent,
     AppReadMoreComponent,
     CareersComponent,
-    ClientSectionComponent
+    ClientSectionComponent,
+    CareersEmptyComponent,
+    ProjectsEmptyComponent
   ],
   imports: [
     BrowserModule,
