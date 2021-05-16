@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host = 'smtpout.secureserver.net';                     //Set the SMTP server to send through
     $mail->SMTPAuth = true;                                   //Enable SMTP authentication
@@ -112,15 +112,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Body = $body;
     $mail->send();
     echo 'Message has been sent';
-    header("Location: 'http://localhost:4200/contact-us?success=true");
+    header("Location: https://new.vishaconsultants.com/contact-us?success=true");
+    die();
   } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    header("Location: 'http://localhost:4200/contact-us?success=false");
+    header("Location: https://new.vishaconsultants.com/contact-us?success=false");
+    die();
   }
 
 } else {
   echo 'done';
-  header("Location: 'http://localhost:4200/contact-us");
+  header("Location: https://new.vishaconsultants.com/contact-us");
+  die();
 }
-
-
