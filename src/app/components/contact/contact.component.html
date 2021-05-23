@@ -79,7 +79,7 @@
   </div><!-- container -->
 </div><!-- contact form section -->
 
-<agm-map [latitude]="lat" [longitude]="lng">
+<agm-map *ngIf="isShow" [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
 

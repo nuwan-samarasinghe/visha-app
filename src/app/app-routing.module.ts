@@ -23,11 +23,11 @@ const routes: Routes = [
   {path: 'about-us', component: AboutComponent},
   {path: 'contact-us', component: ContactComponent},
   {path: 'gallery', component: GalleryComponent},
-  // {path: 'projects', component: PricingComponent},
-  {path: 'projects', component: ProjectsEmptyComponent},
+  {path: 'projects', component: PricingComponent},
+  //{path: 'projects', component: ProjectsEmptyComponent},
   {path: 'services', component: ServiceComponent},
-  // {path: 'careers', component: CareersComponent},
-  {path: 'careers', component: CareersEmptyComponent}
+  {path: 'careers', component: CareersComponent},
+  //{path: 'careers', component: CareersEmptyComponent}
 ];
 
 @NgModule({
