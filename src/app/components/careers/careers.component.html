@@ -18,30 +18,45 @@
         <div class="post-comment">
           <div class="post-nfo">
             <div class="author-image">
-              <img class="img-responsive" src="images/blog/user-1.jpg" alt="Image">
+              <img style="max-width: 100px;" class="img-responsive" src="images/career/career.png" alt="Image">
             </div>
             <div class="commenter-info">
-              <h5>Jhon Doe</h5>
-              <p class="date">Posted on Aug 9, 2016</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco off a laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <a href="mailto:someone@example.com"> <i class="fa fa-share" aria-hidden="true"></i> Replay</a>
+              <h5>Geotechnical Engineering Technician I/II</h5>
+              <p>
+                When hired for this position you will be involved with routine geotechnical construction observation and testing of soil and asphalt materials, basic
+                calculations and data reduction of test results, the preparation of daily field reports documenting construction
+                activities and test results, and other administrative duties, as appropriate.</p>
+
+              <p>Work Environment: The employee may be exposed to weather conditions such as wet and/or humid environments, cold and/or heat, dusty and noisy work environments. Noise levels will typically be moderate to
+                moderately loud. Some weekend and overtime work, as well as travel, may be required.</p>
+
+              <p>
+                Physical Requirements: These physical demands are representative of what a field technician may encounter and are essential
+                functions of the position. You will be involved primarily with outdoor field work. You should have the ability to work safely on a construction site. Lifting – The employee will regularly lift and/or move/shake up to about 40 pounds. Reasonable accommodations may be made to enable
+                individuals with disabilities to perform the essential functions of the position.
+              </p>
+
+              <p>Qualifications:</p>
+
+              <ul>
+                <li>High School/GED diploma or AA degree.</li>
+                <li>6 months to 3 years related soils/asphalt field observation and testing experience.</li>
+                <li>Technician Certification [minimum] – Radiation safety for nuclear density gauge.</li>
+                <li>Experience performing routine laboratory soil tests, Proctors, etc., are a plus.</li>
+              </ul>
+
+              <p>
+                When applying for this position please indicate your compensation expectations ($/hr).
+                Visha Consultants, Inc., provides pick-up trucks and a gas card or fuel reimbursement. Driver’s license verification required; must have a satisfactory driving record in accordance with Cornerstone’s driving policy.
+                Relocation expenses are not provided.
+              </p>
+
+              <a href="mailto:info@vishaconsultants.com"> <i class="fa fa-share" aria-hidden="true"></i> Replay</a>
             </div>
           </div>
         </div>
-        <div class="post-comment">
-          <div class="post-nfo">
-            <div class="author-image">
-              <img class="img-responsive" src="images/blog/user.jpg" alt="Image">
-            </div>
-            <div class="commenter-info">
-              <h5>Adam Marsal</h5>
-              <p class="date">Posted on Aug 9, 2016</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim too veniam, quis nos to to it xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-              <a href="mailto:someone@example.com"> <i class="fa fa-share" aria-hidden="true"></i> Replay</a>
-            </div>
-          </div>
-        </div>
-        <div class="post-comment">
+
+        <div class="post-comment" *ngIf="isShow">
           <div class="post-nfo">
             <div class="author-image">
               <img class="img-responsive" src="images/blog/user3.jpg" alt="Image">
@@ -54,6 +69,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
 

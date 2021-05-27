@@ -35,6 +35,8 @@ export class ContactComponent implements OnInit, AfterViewInit {
   lat = 38.81326876117266;
   lng = -121.22274450431374;
 
+  isShow = false;
+
   constructor(private activatedRoute: ActivatedRoute,
               private formBuilder: FormBuilder,
               private cdr: ChangeDetectorRef,
