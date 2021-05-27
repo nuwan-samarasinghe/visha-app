@@ -9,6 +9,7 @@ import {ServiceComponent} from './components/service/service.component';
 import {CareersComponent} from "./components/careers/careers.component";
 import {CareersEmptyComponent} from "./components/careers-empty/careers-empty.component";
 import {ProjectsEmptyComponent} from "./components/projects-empty/projects-empty.component";
+import {SingleHomeComponent} from "./components/project-details/single-home/single-home.component";
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'contact-us', component: ContactComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'projects', component: ProjectComponent},
+  {path: 'single-home', component: SingleHomeComponent},
   //{path: 'projects', component: ProjectsEmptyComponent},
   {path: 'services', component: ServiceComponent},
   {path: 'careers', component: CareersComponent},

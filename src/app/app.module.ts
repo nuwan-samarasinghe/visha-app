@@ -20,6 +20,7 @@ import {NgxCaptchaModule} from "ngx-captcha";
 import {HttpClientModule} from "@angular/common/http";
 import { CareersEmptyComponent } from './components/careers-empty/careers-empty.component';
 import { ProjectsEmptyComponent } from './components/projects-empty/projects-empty.component';
+import { SingleHomeComponent } from './components/project-details/single-home/single-home.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProjectsEmptyComponent } from './components/projects-empty/projects-emp
     CareersComponent,
     ClientSectionComponent,
     CareersEmptyComponent,
-    ProjectsEmptyComponent
+    ProjectsEmptyComponent,
+    SingleHomeComponent
   ],
   imports: [
     BrowserModule,
