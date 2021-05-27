@@ -21,6 +21,14 @@ import {HttpClientModule} from "@angular/common/http";
 import { CareersEmptyComponent } from './components/careers-empty/careers-empty.component';
 import { ProjectsEmptyComponent } from './components/projects-empty/projects-empty.component';
 import { SingleHomeComponent } from './components/project-details/single-home/single-home.component';
+import { HighriseBuildingComponent } from './components/project-details/highrise-building/highrise-building.component';
+import { HotelsComponent } from './components/project-details/hotels/hotels.component';
+import { HealthcareFacilitiesComponent } from './components/project-details/healthcare-facilities/healthcare-facilities.component';
+import { CommercialAndGovernmentComponent } from './components/project-details/commercial-and-government/commercial-and-government.component';
+import { MultiResidenceDevelopmentComponent } from './components/project-details/multi-residence-development/multi-residence-development.component';
+import { SchoolsComponent } from './components/project-details/schools/schools.component';
+import { WarehouseConstructionComponent } from './components/project-details/warehouse-construction/warehouse-construction.component';
+import { ChurchesAndCemeteriesComponent } from './components/project-details/churches-and-cemeteries/churches-and-cemeteries.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +46,15 @@ import { SingleHomeComponent } from './components/project-details/single-home/si
     ClientSectionComponent,
     CareersEmptyComponent,
     ProjectsEmptyComponent,
-    SingleHomeComponent
+    SingleHomeComponent,
+    HighriseBuildingComponent,
+    HotelsComponent,
+    HealthcareFacilitiesComponent,
+    CommercialAndGovernmentComponent,
+    MultiResidenceDevelopmentComponent,
+    SchoolsComponent,
+    WarehouseConstructionComponent,
+    ChurchesAndCemeteriesComponent
   ],
   imports: [
     BrowserModule,
