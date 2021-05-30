@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ChurchesAndCemeteriesComponent implements OnInit {
 
   constructor() { }
+  isShow = false;
 
   ngOnInit(): void {
   }

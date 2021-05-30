@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SchoolsComponent implements OnInit {
 
   constructor() { }
+  isShow = false;
 
   ngOnInit(): void {
   }
