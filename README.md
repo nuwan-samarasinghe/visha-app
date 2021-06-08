@@ -15,3 +15,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+Copy `dist` directory content to the `/httpdocs` using FTP client.
+
+Download FTP client: https://filezilla-project.org/download.php?platform=win64
+
+ 
