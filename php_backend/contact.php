@@ -112,16 +112,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Body = $body;
     $mail->send();
     echo 'Message has been sent';
-    header("Location: https://new.vishaconsultants.com/contact-us?success=true");
+    header("Location: https://vishaconsultants.com/contact-us?success=true");
     die();
   } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    header("Location: https://new.vishaconsultants.com/contact-us?success=false");
+    header("Location: https://vishaconsultants.com/contact-us?success=false");
     die();
   }
 
 } else {
   echo 'done';
-  header("Location: https://new.vishaconsultants.com/contact-us");
+  header("Location: https://vishaconsultants.com/contact-us");
   die();
 }

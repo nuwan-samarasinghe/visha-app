@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -28,10 +29,14 @@ export class HomeComponent implements OnInit {
     '              grading, observation and testing for utility trenches and retaining walls during backfilling, and\n' +
     '              subgrade, aggregate base and asphalt concrete.';
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  redirect(page: string): void {
+    this.router.navigate(['/' + page]).then(value => window.location.reload());
   }
 
 }
