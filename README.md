@@ -3,6 +3,10 @@
 ## Technologies used
 1. [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
+## Before starting the Development
+
+run ```npm install``` to get the dependencies
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
